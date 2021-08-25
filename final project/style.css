@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  
+}
+/* Navigation */
+
+
+.nav-menu{
+    padding:25px;
+}
+/* note: overrides blue text from Boostra[ */
+.navbar a {
+    color: white;
+    
+}
+
+.menu{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    transition: all .4s;
+}
+
+
+#navbar-primary .navbar-nav > li a:hover{
+    background:transparent !important;
+}
+.menu:hover{
+    color:rgb(156, 130, 96);
+
+}
+
+
+    
+
+/* End of Navigation */
+
+
+
+
+/* Header */
+
+header{
+
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.5)),url('images/pexels-chevanon-photography-302899.jpg');
+   
+    background-repeat: no-repeat;
+    position: center;
+    background-size:cover;
+    height: 100vh;
+}
+
+.banner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+
+
+.heading{
+    animation-name: slideAcross;
+    animation-duration: 2s;
+}
+
+.main{
+    animation-name: slideAcross;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode:backwards;
+
+}
+
+.icon-style{
+    color: white;
+}
+
+@keyframes slideAcross{
+    0%{
+        transform: translate(1000px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* End of Header */
+
+/* About Coffee Nook */
+
+
+.about {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+  }
+  
+.about {
+    background: #fffaf3;
+  }
+  
+  .about .content {
+    padding: 0 80px;
+  }
+
+  
+  
+  .about .content h3 {
+    font-weight: 400;
+    font-size: 40px;
+    color: #5f5950;
+  }
+ .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li + li {
+    margin-top: 27px;
+  }
+  
+  .about .content ul li {
+    position: relative;
+    padding-left: 50px;
+  }
+  
+  .about .video-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    position: relative;
+  }
+  
+  
+  
+  
+/* End of About Coffee Nook */
+
+/*==========Our-Fav Section===============*/
+.our-fav{
+   background:rgb(102, 82, 59);
+   margin-top:30px;
+   color:#d4c1c19a;
+}
+.coffee-card{
+    position:relative;
+    box-shadow: 5px 15px 50px #634832;
+    max-width:420px;
+    transition: all .8s;
+    overflow:hidden;
+    cursor:pointer;
+}
+.coffee-card img{
+    width:300px;
+    height: 300px;
+}
+.card-header .title-text{
+    color:black;
+    background:blanchedalmond;
+}
+
+.rotate{
+    perspective:100rem;
+    color:black;
+}
+.card-footer{
+    background:#d4c1c19a;
+}
+.back{
+    position:absolute;
+    top: -100%;
+    background : #fff;
+    height:100%;
+    width:100%;
+    opacity:0;
+    user-select:none;
+    pointer-events:none;
+    transform:rotateY(180deg);
+    transition:top .8s opacity .4s;
+    background:blanchedalmond;
+}
+.back-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.rotate:hover .coffee-card{
+    transform: rotateY(180deg);
+}
+.rotate:hover .back{
+    opacity: 1;
+    top:0;
+    user-select:auto;
+    pointer-events:auto;
+}
+.back-content .btn{
+    color:#dbc1ac;
+    font-weight:bold;
+    border:2px solid #534832;
+    font-size: 25px;
+}
+
+/*==========Endf of Our-Fav Section===============*/
